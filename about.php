@@ -7,8 +7,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>People Says About Farm</h2>
-                     
+                     <h2>People Says About Farm</h2> 
                   </div>
                </div>
             </div>
@@ -80,9 +79,7 @@
             </div>
          </div>
       </div>
-      <!-- end about -->
       </div>
-      <!--  footer -->
       <?php
     include('partials/footer.php');
       ?>
