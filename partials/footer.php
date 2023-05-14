@@ -7,69 +7,39 @@
                         <h2>Contact Us</h2>
                      </div>
                   </div>
-                  <div class="col-md-12">
-                     <form id="request" class="main_form">
-                        <div class="row">
-                           <div class="col-md-3 ">
-                              <input class="contactus" placeholder="Full Name" type="type" name="Full Name"> 
-                           </div>
-                           <div class="col-md-3">
-                              <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                           </div>
-                           <div class="col-md-3">
-                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                           </div>
-                           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                              <ul class="social_icon">
-                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="col-md-8">
-                              <textarea class="contactus1" placeholder="Message" type="type" Message="Name">Message </textarea>
-                           </div>
-                           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                              <button class="send_btn">Send</button>
-                           </div>
-                           
-                        </div>
-                     </form>
-                  </div>
-                  
+                  <?php
+                  include('partials/form.php');
+                  ?>  
                    <div class="col-md-3 border_right">
                      <ul class="location_icon">
-                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Locatins</li>
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Location</li>
                         <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321</li>
                         <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
                      </ul>
                   </div>
-                  <div class="col-md-3 border_right">
-                     <h3>Useful Link</h3>
-                     <ul class="link">
-                        <li><a href="#">humour, or </a></li>
-                        <li><a href="#">randomised words </a> </li>
-                        <li><a href="#">which don't look </a></li>
-                        <li><a href="#">even slightly  </a> </li>
-                        <li><a href="#">believable. If   </a></li>
-                     </ul>
-                  </div>
+                  <?php
+                  $pages = [
+                     'index' => 'Home',
+                     'about' => 'About',
+                     'products' => 'Products',
+                     'blog' => 'Blog',
+                     'contact' => 'Contact',
+                  ];
+                  ?>
+
                   <div class="col-md-3 border_right">
                      <h3>Menus</h3>
                      <ul class="link">
-<li><a href="index.html">Home</a></li>                             
-<li><a href="about.html">About</a></li>                                                     
-<li><a href="products.html">Products</a></li>                             
-<li><a href="blog.html">Blog</a></li>
-<li><a href="contact.html">Contact</a></li>
+                        <?php foreach ($pages as $page => $label) { ?>
+                              <li><a href="<?php echo $page ?>.php"><?php echo $label ?></a></li>
+                        <?php } ?>
                      </ul>
                   </div>
                   <div class="col-md-3">
                      <form class="bottom_form">
                         <h3>Newsletter</h3>
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
+                        <input class="enter" placeholder="Váš email" type="text" name="Enter your email">
+                        <button class="sub_btn">Odoberať</button>
                      </form>
                   </div>
                </div>
