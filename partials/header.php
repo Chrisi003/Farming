@@ -55,7 +55,9 @@
                         'about.php' => 'About',
                         'products.php' => 'Products',
                         'blog.php' => 'Blog',
-                        'contact.php' => 'Contact'
+                        'contact.php' => 'Contact',
+                        'login.php' => 'Login',
+                        'admin.php' => 'Admin'
                      ];
 
                      $active_page = basename($_SERVER['SCRIPT_NAME']);

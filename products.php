@@ -1,12 +1,11 @@
 <?php
     include('partials/header.php');
   ?>
-      <?php
+  <br><br>
+<?php
     include('partials/product.php');
-      ?>
-
-      <?php
+?>
+<br><br>
+<?php
     include('partials/footer.php');
-      ?>
-
-
+  ?>

@@ -21,8 +21,8 @@
                   // create an array of testimonials with name and text
                   $testimonials = array(
                      array('name' => 'DI JHONE', 'text' => 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'),
-                     array('name' => 'JOHN PORK', 'text' => 'Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat.'),
-                     array('name' => 'Jamal Tyrone', 'text' => 'Attention he extremity unwilling on otherwise. Conviction up partiality as delightful is discovered. Yet jennings resolved disposed exertion you off. Left did fond drew fat head poor. So if he into shot half many long. China fully him every fat was world grave.')
+                     array('name' => 'JOHN', 'text' => 'Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat.'),
+                     array('name' => 'Jamal', 'text' => 'Attention he extremity unwilling on otherwise. Conviction up partiality as delightful is discovered. Yet jennings resolved disposed exertion you off. Left did fond drew fat head poor. So if he into shot half many long. China fully him every fat was world grave.')
                   );
                   // loop through the testimonials array and create carousel items
                   foreach($testimonials as $index => $testimonial) { ?>

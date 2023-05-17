@@ -9,7 +9,7 @@
                   </div>
                   <?php
                   include('partials/form.php');
-                  ?>  
+                  ?>
                    <div class="col-md-3 border_right">
                      <ul class="location_icon">
                         <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Location</li>
@@ -26,7 +26,6 @@
                      'contact' => 'Contact',
                   ];
                   ?>
-
                   <div class="col-md-3 border_right">
                      <h3>Menus</h3>
                      <ul class="link">
@@ -35,14 +34,10 @@
                         <?php } ?>
                      </ul>
                   </div>
-                  <div class="col-md-3">
-                     <form class="bottom_form">
-                        <h3>Newsletter</h3>
-                        <input class="enter" placeholder="Váš email" type="text" name="Enter your email">
-                        <button class="sub_btn">Odoberať</button>
-                     </form>
-                  </div>
-               </div>
+                  <?php
+                     include('partials/news.php');
+                  ?>
+
             </div>
             <div class="copyright">
                <div class="container">
