@@ -1,11 +1,20 @@
 <?php
     include('partials/header.php');
   ?>
-  <br><br>
+  <?php
+    include('partials/banner.php');
+      ?>
+<?php
+function getPageTitle()
+{
+    return "Products We Offer";
+}
+?>
+<br><br><br>
 <?php
     include('partials/product.php');
 ?>
-<br><br>
+<br><br><br>
 <?php
     include('partials/footer.php');
-  ?>
+?>

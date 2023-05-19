@@ -3,7 +3,7 @@
       <div class="row">
          <div class="col-md-12">
             <div class="titlepage">
-               <h2>What People Say About The Farm</h2> 
+               <h2>Reviews</h2> 
             </div>
          </div>
       </div>
@@ -56,4 +56,4 @@
          </div>
       </div>
 </div>
-                  </div>
+</div>
