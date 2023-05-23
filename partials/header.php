@@ -52,7 +52,6 @@
                   <?php
                      $pages = [
                         'index.php' => 'Home',
-                        'about.php' => 'About',
                         'products.php' => 'Products',
                         'blog.php' => 'Blog',
                         'contact.php' => 'Contact',

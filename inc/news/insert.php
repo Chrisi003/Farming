@@ -10,10 +10,9 @@ if(isset($_POST['news'])){
         $query = "INSERT INTO news (news_email) VALUES (:news_email)";
         $query_run = $db->conn->prepare($query);
         $query_run->execute($data);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
     }catch(PDOException $e){
         print_r($e->getMessage());
     }   
-}else{
-    print_r("F");
 }
 ?>

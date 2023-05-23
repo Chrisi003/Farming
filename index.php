@@ -54,12 +54,7 @@
       <?php
     include('partials/blog.php');
       ?>
-          <?php
-    include('partials/product.php');
-      ?>
-      <?php
-    include('partials/about.php');
-      ?>
+   
       </div>
       <?php
     include('partials/footer.php');

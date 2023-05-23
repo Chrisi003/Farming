@@ -60,4 +60,38 @@
         ?>
     </section>
 </body>
+<section>
+    <h2>Produkt</h2>
+    <form action="inc/product/insert.php" method="post">
+        <input type="text" name="name" id="name" placeholder="Názov produktu">
+        <input type="text" name="image" id="image" placeholder="Cesta k obrázku">
+        <input type="submit" value="Pridať" name="add_product">
+    </form>
+
+    <table class="admin-table">
+        <?php
+        $products = $Product->get_product();
+        foreach ($products as $p) {
+            echo '<tr>';
+            echo '<td>' . $p->name . '</td>';
+            echo '<td>' . $p->image . '</td>';
+            echo '<td>'.'<img width="150" src = "'.$p->image.'">';
+            echo '<td>
+                <form action="inc/product/update.php" method="post">
+                    <input type="text" name="id" value="' . $p->id . '" hidden>
+                    <input type="text" name="name" value="' . $p->name . '" placeholder="Názov produktu">
+                    <input type="text" name="image" value="' . $p->image . '" placeholder="Fotka">
+                    <input type="submit" value="premenovať" name="rename_product">
+                </form>
+            </td>';
+            echo '<td>
+                <form action="inc/product/delete.php" method="post">
+                    <button type="submit" name="delete_product" value="' . $p->id . '">Vymazať</button>
+                </form>
+            </td>';
+            echo '</tr>';
+        }
+        ?>
+    </table>
+</section>
 </html>

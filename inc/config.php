@@ -4,4 +4,5 @@
  require_once('User.php'); 
  require_once('Contact.php'); 
  require_once('News.php'); 
+ require_once('product.php'); 
 ?>
