@@ -60,6 +60,7 @@
         ?>
     </section>
 </body>
+<br><br>
 <section>
     <h2>Produkt</h2>
     <form action="inc/product/insert.php" method="post">
@@ -70,8 +71,8 @@
 
     <table class="admin-table">
         <?php
-        $products = $Product->get_product();
-        foreach ($products as $p) {
+        $product = $Product->get_product();
+        foreach ($product as $p) {
             echo '<tr>';
             echo '<td>' . $p->name . '</td>';
             echo '<td>' . $p->image . '</td>';
